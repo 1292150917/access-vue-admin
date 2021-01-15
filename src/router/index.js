@@ -12,31 +12,32 @@ Vue.use(Router)
 // newPage 是否为新页面不是标签  默认为false  
 
 // 不需要权限的路由
-export const routes = [{
-  path: '',
-  component: Home,
-  redirect: "/console",
-  meta: {
-    title: '监控中心'
-  },
-  children: [
-    {
-      path: '/console',
-      component: Console,
-      meta: {
-        title: '控制台'
+export const routes = [
+  {
+    path: '',
+    component: Home,
+    redirect: "/console",
+    meta: {
+      title: '监控中心'
+    },
+    children: [
+      {
+        path: '/console',
+        component: Console,
+        meta: {
+          title: '控制台'
+        }
       }
+    ]
+  }, {
+    path: '/login',
+    component: () => import('@/pages/login/Login'),
+    meta: {
+      title: '登录',
+      noMenu: true,
+      newPage: true
     }
-  ]
-}, {
-  path: '/login',
-  component: () => import('@/pages/login/Login'),
-  meta: {
-    title: '登录',
-    noMenu: true,
-    newPage: true
   }
-}
 ]
 
 const router = new Router({
@@ -145,6 +146,23 @@ export const allowRouters = [{
       component: () => import('@/pages/table/List'),
       meta: {
         title: 'Table案例',
+        independent: true
+      }
+    }
+  ]
+},{
+  path: '/form-generator',
+  component: Home,
+  meta: {
+    title: 'form-generator',
+    noMenu: true
+  },
+  children: [
+    {
+      path: '/form-generator',
+      component: () => import('@/pages/formGenerator'),
+      meta: {
+        title: '表单设计器',
         independent: true
       }
     }

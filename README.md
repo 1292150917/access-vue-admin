@@ -3,8 +3,8 @@
  * @version: 
  * @Author: zhang zi fang
  * @Date: 2021-01-12 09:16:04
- * @LastEditors: zhang zi fang
- * @LastEditTime: 2021-01-14 17:46:11
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-01-14 19:54:25
 -->
 <p>
   <img src="https://www.qiniu.lingchen.kim/QQ%E6%88%AA%E5%9B%BE20210109130556.png">
@@ -21,6 +21,7 @@
 - webpack性能打包优化
 - table的换列操作 支持单table
 - 支持侧边栏读取本地或者接口操作
+- 内置formGenerator
 
 BUG反馈/问题交流 QQ群：818735789
 
@@ -68,6 +69,14 @@ access-vue-admin 是一套企业级的高颜值、高性能的通用型中后台
 - 功能块鉴权
 - 功能点鉴权
 - 鉴权指令
+
+## 报错
+
+- r Python executable "python" in the PATH
+
+注意是ndoe-sass的问题，请使用cnpm安装，先把node_models删掉，然后cnpm install 
+
+如未解决请百度 `node-sass`报错 Python executable "python" in the PATH
 
 ## 兼容性
 - 支持 Chrome、Safari、Firefox 等现代主流浏览器。

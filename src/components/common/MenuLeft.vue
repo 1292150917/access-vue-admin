@@ -64,18 +64,24 @@ export default {
       },
       immediate: true,
     },
-    mobile(res) {
-      this.collapse = res;
+    mobile: {
+      handler(res) {
+        this.collapse = res;
+      },
+      immediate: true,
     },
-    collapse() {
-      if (this.collapse === false) {
-        if (this.mobile) {
-          var _this = this;
-          this.watchbody((res) => {
-            this.collapse = true;
-          });
+    collapse: {
+      handler() {
+        if (this.collapse === false) {
+          if (this.mobile) {
+            var _this = this;
+            this.watchbody((res) => {
+              this.collapse = true;
+            });
+          }
         }
-      }
+      },
+      immediate: true,
     },
     "setting.uniqueOpened"(uniqueOpened) {
       this.uniqueOpened = uniqueOpened;
@@ -129,7 +135,7 @@ export default {
     // 菜单展开 | 收缩
     visibleMenu() {
       this.collapse = !this.collapse;
-    }
+    },
   },
 };
 </script>

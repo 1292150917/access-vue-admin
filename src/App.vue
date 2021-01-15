@@ -110,8 +110,8 @@ export default {
           s.noMenu = s.meta.noMenu;
           s.independent = s.meta.independent;
           if (s.meta.independent) {
-            var _s = JSON.parse(JSON.stringify(s))
-            _s.independent = false
+            var _s = JSON.parse(JSON.stringify(s));
+            _s.independent = false;
             if (this.$root.localRouter[_index]) {
               this.$root.localRouter[_index].push(_s);
             } else {
@@ -133,13 +133,18 @@ export default {
     noRebound() {
       // 为移动端适配
       var is_Fit = false;
+      var that = this
       document.body.onresize = () => {
+        onresize()
+      };
+      onresize()
+      function onresize() {
         var _is = document.body.clientWidth < 700;
         if (is_Fit !== _is) {
           is_Fit = _is;
-          this.$store.state.menu.mobileFlt = _is;
+          that.$store.state.menu.mobileFlt = _is;
         }
-      };
+      }
       document.body.addEventListener(
         "touchmove",
         function (e) {
