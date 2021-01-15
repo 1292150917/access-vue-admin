@@ -1,0 +1,178 @@
+{
+	"code": 200,
+	"data": [
+    {
+      "title": "监控中心",
+      "icon": "\ue6b2",
+      "children":[
+        {
+          "title":"控制台",
+          "path": "/console"
+        }
+      ]
+    },
+    {
+      "title": "文章管理", 
+      "icon": "\ue61e",
+      "children": [
+        {
+          "title": "文章列表",
+          "path": "/article/article-list"
+        },
+        {
+          "title": "文章分类",
+          "path": "/article/classify"
+        },
+        {
+          "title": "文章发布",
+          "path": "/article/article-publish"
+        }
+      ]
+    },
+    {
+      "title": "用户管理",
+      "icon": "\ue725",
+      "children": [
+        {
+          "title": "个人中心",
+          "path": "/user/user",
+          "noMenu": true
+        },
+        {
+          "title": "账号管理",
+          "path": "/user/account"
+        },
+        {
+          "title": "部门管理",
+          "path": "/user/department"
+        },
+        {
+          "title": "角色权限",
+          "path": "/user/role"
+        }
+      ]
+    },
+    {
+      "title": "菜单管理",
+      "icon": "\ue662",
+      "children": [
+        {
+          "title": "权限设置",
+          "path": "/menu/menu",
+          "permission": [
+            {
+              "id": 1,
+              "title": "新增",
+              "keep_alive": 1,
+              "permission_mark": "menu/add"
+            },{
+              "id": 2,
+              "title": "编辑",
+              "keep_alive": 1,
+              "permission_mark": "menu/edit"
+            },{
+              "id": 3,
+              "title": "删除",
+              "keep_alive": 1,
+              "permission_mark": "menu/delete"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "组件中心",
+      "icon": "\ue61c",
+      "children": [
+        {
+          "title": "按钮",
+          "path": "/widget/button"
+        },
+        {
+          "title": "链接",
+          "path": "/widget/link"
+        },
+        {
+          "title": "文件上传",
+          "path": "/widget/upload"
+        },
+        {
+          "title": "评分",
+          "path": "/widget/rate"
+        },
+        {
+          "title": "颜色选择器",
+          "path": "/widget/color-picker"
+        },
+        {
+          "title": "表单",
+          "path": "/widget/form"
+        }
+      ]
+    },
+    {
+      "title": "计划管理",
+      "icon": "\ue651",
+      "children": [
+        {
+          "title": "年度计划",
+          "path": "/plan/year-plan"
+        }
+      ]
+    },
+    {
+      "title": "消息中心",
+      "icon": "\ue72c",
+      "children": [
+        {
+          "title": "系统消息",
+          "path": "/message/message"
+        }
+      ]
+    },
+    {
+      "title": "异常页面",
+      "icon": "\ue600",
+      "children": [
+        {
+          "title": "403",
+          "path": "/exception/403"
+        }, {
+          "title": "404",
+          "path": "/exception/404"
+        },{
+          "title": "500",
+          "path": "/exception/500"
+        }
+      ]
+    },
+    {
+      "title": "系统设置",
+      "icon": "\ue65d",
+      "children": [
+        {
+          "title": "系统设置",
+          "path": "/system/setting"
+        },
+        {
+          "title": "系统日志",
+          "path": "/system/log"
+        }
+      ]
+    },
+    {
+      "title": "运维管理",
+      "icon": "\ue6b2",
+      "children": [
+        {
+          "title": "服务器管理",
+          "path": "/safeguard/server"
+        },
+        {
+          "title": "数据库管理",
+          "path": "/safeguard/database"
+        }
+      ]
+    }
+  ]
+}

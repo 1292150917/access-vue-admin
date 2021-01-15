@@ -1,0 +1,148 @@
+$border-color: #444951;
+$font-color: #8a8d93;
+$background-color:#22252A;
+
+.dark-body * {
+  color: $font-color !important;
+  background: $background-color !important;
+
+  ::placeholder {
+    color: $font-color !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: $background-color !important;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: $font-color !important;
+  }
+
+  .frame,
+  .console,
+  .worktab,
+  .__panel .__view {
+    background: #1E1D1D !important;
+  }
+
+  .el-button,
+  .el-input__inner,
+  .el-textarea__inner,
+  .el-radio, 
+  .el-radio__inner, 
+  .el-radio__input,
+  .el-tag,
+  .el-select-dropdown,
+  .el-dropdown-menu,
+  .el-checkbox__inner,
+  .el-switch__core,
+  .el-button-group > .el-button,
+  .ql-toolbar.ql-snow,
+  .ql-container.ql-snow,
+  .el-dropdown-menu,
+  .el-select-dropdown,
+  .el-input-number.is-controls-right .el-input-number__increase,
+  .el-input-number.is-controls-right .el-input-number__decrease {
+    border-color: $border-color !important;
+  }
+
+  .el-switch__core {
+    border: 2px solid $border-color !important;
+  }
+
+  .el-switch__core:after {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .page-content .info .title,
+  .page-content .header,
+  .drawer-con .title::before,
+  .drawer-con .title::after,
+  .el-popper[x-placement^=bottom] .popper__arrow::after,
+  .el-popper[x-placement^=bottom] .popper__arrow,
+  .page-content .article-list .item {
+    border-bottom-color: $border-color !important;
+  }
+
+  .el-drawer__wrapper,
+  .el-drawer.ltr, .el-drawer.rtl, .el-drawer__container {
+    background: transparent !important;
+  }
+
+  .page-content .article-list .item .left .outer>div {
+    border-right-color: $border-color !important;
+  }
+
+  .el-table--border::after, .el-table--group::after, .el-table::before,
+  .el-table__fixed-right::before, .el-table__fixed::before,
+  .frame .menu .el-menu-dark .el-menu-item.is-active {
+    background: $border-color !important;
+  }
+
+  .frame .menu .el-submenu .el-menu-item span {
+    color: $font-color !important;
+  }
+
+  .frame .menu .el-menu-dark .el-menu-item.is-active span {
+    color: #bfc1c4 !important;
+  }
+
+  .menu .el-menu-white .el-menu-item.is-active {
+    background: #17191C !important;
+  }
+
+  .menu .el-menu-white .el-submenu__title:hover,
+  .menu .el-menu-white .el-submenu .el-menu-item:hover {
+    color: #3296FA !important;
+    background: #1D2025 !important;
+  }
+
+  .menu .el-menu-white .el-submenu__title:hover i,
+  .menu .el-menu-white .el-submenu .el-menu-item:hover i {
+    color: $font-color !important;
+  }
+
+  // 表格行下边框颜色
+  .el-table td, .el-table th.is-leaf {
+    border-bottom: 1px solid #343A40 !important;
+  }
+
+  .menu .el-submenu .el-menu-item span {
+    color: #ccc !important;
+    background: transparent !important;
+  }
+
+  .worktab .right .btn {
+    border-left: none !important;
+    box-shadow: none !important;
+  }
+
+  .drawer-con .theme-wrap .item .box,
+  .drawer-con .menu-theme-wrap .item .box {
+    box-shadow: none !important;
+    border: 1px solid $border-color !important;
+  }
+
+  .el-input__suffix {
+    height: calc(100% - 2px) !important;
+    top: 1px;
+  }
+
+  .el-select__caret  {
+    background: transparent !important;
+  }
+
+  .el-button--text {
+    border: none !important;
+  }
+  
+  .el-dialog__wrapper {
+    background: transparent !important;
+  }
+
+  .el-dialog {
+    border: 1px solid $border-color !important;
+  }
+}

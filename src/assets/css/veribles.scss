@@ -1,0 +1,27 @@
+// 主题色
+$theme-color: #3296fa;
+// 默认字体颜色
+$default-font-color: #333333;
+// 默认字体大小
+$default-font-size: 13px;
+// 默认系统背景色
+$default-background: #F6F7F9;
+// 表格字体大小
+$table-font-size: 13px;
+// 菜单背景色
+$theme-menu-color: #fff;
+// 图标hover背景色
+$icon-hover-bg: #F4F3F3;
+// 蒙版背景色
+$mask-color: #000000;
+// 蒙版透明度
+$mask-alpha: 0.6;
+// 左侧菜单展开时的宽度
+$menu-left-open-width: 250px;
+// 左侧菜单收缩时的宽度
+$menu-left-shrink-width: 70px;
+
+$device-notebook: 1600px;  
+$device-ipad-pro: 1160px;
+$device-ipad: 800px;
+$device-phone: 500px;
