@@ -125,7 +125,17 @@ export default {
         let t = setting.themeList.filter((item) => {
           return item.theme === theme;
         });
-        this.theme = t[0];
+        var _theme = t[0] || {
+          activeColor: "#ffffff",
+          iconColor: "#BABBBD",
+          iconColorActive: "#FFFFFF",
+          menuLeftBc: theme,
+          tabbarBackground: "#ffffff",
+          tabbarFontColor: "#ffffff",
+          textColor: "#BABBBD",
+          theme: "custom",
+        };
+        this.theme = _theme;
       }
     },
     // 初始化用户设置

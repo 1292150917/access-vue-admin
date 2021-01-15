@@ -4,10 +4,10 @@
  * @Author: zhang zi fang
  * @Date: 2021-01-13 08:54:12
  * @LastEditors: zhang zi fang
- * @LastEditTime: 2021-01-14 14:56:47
+ * @LastEditTime: 2021-01-15 16:06:20
  */
 const setting = {
-  systemName: 'Access Admin',
+  systemName: 'Acc2121ess Admin',
   // 登录默认账号密码
   login: {
     username: 'admin',
@@ -40,6 +40,15 @@ const setting = {
       iconColorActive: '#333333',
       tabbarBackground: '#ffffff',
       tabbarFontColor: '#333333'
+    },{
+      theme: 'cyan',
+      menuLeftBc: '#304156',
+      textColor: '#BABBBD', // 文字颜色
+      activeColor: '#ffffff', // 文字选中颜色
+      iconColor: '#BABBBD', // 图标颜色
+      iconColorActive: '#FFFFFF', // 图标选中颜色
+      tabbarBackground: '#ffffff',
+      tabbarFontColor: '#ffffff'
     }
   ]
 }
