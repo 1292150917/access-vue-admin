@@ -4,10 +4,10 @@
  * @Author: zhang zi fang
  * @Date: 2021-01-13 08:54:12
  * @LastEditors: zhang zi fang
- * @LastEditTime: 2021-01-15 16:06:20
+ * @LastEditTime: 2021-01-18 09:45:39
  */
 const setting = {
-  systemName: 'Acc2121ess Admin',
+  systemName: 'Access Admin',
   // 登录默认账号密码
   login: {
     username: 'admin',

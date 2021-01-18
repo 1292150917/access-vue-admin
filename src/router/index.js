@@ -58,6 +58,13 @@ export const allowRouters = [{
       meta: {
         title: '个人中心'
       },
+    }, {
+      path: '/form',
+      component: () => import('@/pages/form'),
+      meta: {
+        title: 'CURD生成',
+        independent: true
+      }
     },
     {
       path: '/user/account',
@@ -150,7 +157,7 @@ export const allowRouters = [{
       }
     }
   ]
-},{
+}, {
   path: '/form-generator',
   component: Home,
   meta: {
