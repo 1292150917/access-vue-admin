@@ -133,11 +133,11 @@ export default {
     noRebound() {
       // 为移动端适配
       var is_Fit = false;
-      var that = this
+      var that = this;
       document.body.onresize = () => {
-        onresize()
+        onresize();
       };
-      onresize()
+      onresize();
       function onresize() {
         var _is = document.body.clientWidth < 700;
         if (is_Fit !== _is) {
@@ -145,13 +145,15 @@ export default {
           that.$store.state.menu.mobileFlt = _is;
         }
       }
-      document.body.addEventListener(
-        "touchmove",
-        function (e) {
-          e.preventDefault();
-        },
-        { passive: false }
-      );
+      if (!is_Fit) {
+        document.body.addEventListener(
+          "touchmove",
+          function (e) {
+            e.preventDefault();
+          },
+          { passive: false }
+        );
+      }
     },
   },
 };

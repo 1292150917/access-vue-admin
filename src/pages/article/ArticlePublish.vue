@@ -201,7 +201,7 @@
         }
       }
 
-      /deep/ .el-upload--picture-card {
+      ::v-deep .el-upload--picture-card {
         width: 220px;
         height: 140px;
       }

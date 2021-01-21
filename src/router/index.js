@@ -56,7 +56,8 @@ export const allowRouters = [{
       path: '/user/user',
       component: () => import('@/pages/user/User'),
       meta: {
-        title: '个人中心'
+        title: '个人中心',
+        noMenu:true
       },
     }, {
       path: '/form',

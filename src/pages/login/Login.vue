@@ -101,13 +101,13 @@
       height: 32px;
     }
 
-    /deep/ .el-input__inner {
+    ::v-deep .el-input__inner {
       &:focus {
         border: 1px solid #4E83FD;
       }
     }
 
-    /deep/ .el-input--medium .el-input__inner {
+    ::v-deep .el-input--medium .el-input__inner {
       height: 40px;
       line-height: 40px;
     }

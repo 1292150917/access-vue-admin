@@ -243,13 +243,13 @@ export default {
     height: 100% !important;
 
     // 分页组件
-    /deep/ .el-pagination {
+    ::v-deep .el-pagination {
       margin: 20px 0 0 -5px;
       padding-left: 0;
     }
 
     // 滚动条
-    /deep/ ::-webkit-scrollbar {
+    ::v-deep ::-webkit-scrollbar {
       height: 6px !important;
       display: block !important;
     }
@@ -270,7 +270,7 @@ export default {
   }
 
   .hide-scroll-bar {
-    /deep/ ::-webkit-scrollbar {
+    ::v-deep ::-webkit-scrollbar {
       width: 0 !important;
       height: 0 !important;
     }

@@ -139,7 +139,7 @@
     }
   }
 
-  /deep/ .el-table .cell {
+  ::v-deep .el-table .cell {
     font-size: 13px;
   }
 
