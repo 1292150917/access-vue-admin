@@ -164,6 +164,9 @@ export default {
   font-size: 10px;
 }
 
+.el-menu--collapse .el-submenu__icon-arrow.el-icon-arrow-right {
+  display: none;
+}
 .el-btn-red {
   color: #fa6962 !important;
 

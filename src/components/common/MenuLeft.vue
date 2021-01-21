@@ -27,8 +27,9 @@
       :text-color="theme.textColor"
       :active-text-color="theme.activeColor"
     >
+    
       <template v-for="(item1, index) in menuList">
-        <div is="menu-left-ttem" :tier="1" :key="index" :menu="item1"></div>
+        <div is="menu-left-ttem" :tier="1" :collapse="collapse" :key="index" :menu="item1"></div>
       </template>
     </el-menu>
   </div>

@@ -4,7 +4,7 @@
  * @Author: zhang zi fang
  * @Date: 2021-01-14 14:58:20
  * @LastEditors: zhang zi fang
- * @LastEditTime: 2021-01-15 15:54:23
+ * @LastEditTime: 2021-01-21 14:16:11
 -->
 <template>
   <div v-if="!item1.noMenu && !item1.independent">
@@ -24,7 +24,7 @@
         }"
         >{{ item1.icon }}</i
       >
-      <span :style="titleStyle">
+      <span slot="title" :style="titleStyle">
         {{ item1.title }}
       </span>
     </el-menu-item>
@@ -40,7 +40,7 @@
           }"
           >{{ item1.icon }}</i
         >
-        <span>
+        <span slot="title" v-if="!collapse">
           {{ item1.title }}
         </span>
       </template>
@@ -150,7 +150,7 @@ export default {
       }
     },
   },
-  props: ["menu", "tier"],
+  props: ["menu", "tier",'collapse'],
   created() {
     this.item1 = this.menu;
   },

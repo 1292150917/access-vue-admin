@@ -17,6 +17,7 @@ export const routes = [
     path: '',
     component: Home,
     redirect: "/console",
+    icon:"\ue6b2",
     meta: {
       title: '监控中心'
     },
@@ -48,6 +49,7 @@ const router = new Router({
 export const allowRouters = [{
   path: '/user',
   component: Home,
+  icon:"\ue6b2",
   meta: {
     title: '用户管理'
   },
@@ -62,6 +64,7 @@ export const allowRouters = [{
     }, {
       path: '/form',
       component: () => import('@/pages/form'),
+      icon:"\ue6b2",
       meta: {
         title: 'CURD生成',
         independent: true
@@ -92,6 +95,7 @@ export const allowRouters = [{
 }, {
   path: '/menu',
   component: Home,
+  icon:"\ue6b2",
   meta: {
     title: '菜单管理'
   },
@@ -108,6 +112,7 @@ export const allowRouters = [{
 {
   path: '/article',
   component: Home,
+  icon:"\ue6b2",
   meta: {
     title: '文章管理'
   },
@@ -144,6 +149,7 @@ export const allowRouters = [{
 }, {
   path: '/table',
   component: Home,
+  icon:"\ue6b2",
   meta: {
     title: 'table',
     noMenu: true
@@ -152,6 +158,7 @@ export const allowRouters = [{
     {
       path: '/table/list',
       component: () => import('@/pages/table/List'),
+      icon:"\ue6b2",
       meta: {
         title: 'Table案例',
         independent: true
@@ -169,6 +176,7 @@ export const allowRouters = [{
     {
       path: '/form-generator',
       component: () => import('@/pages/formGenerator'),
+      icon:"\ue6b2",
       meta: {
         title: '表单设计器',
         independent: true
@@ -178,6 +186,7 @@ export const allowRouters = [{
 }, {
   path: '/message',
   component: Home,
+  icon:"\ue6b2",
   meta: {
     title: '消息中心'
   },
@@ -193,6 +202,7 @@ export const allowRouters = [{
 }, {
   path: '/system',
   component: Home,
+  icon:"\ue6b2",
   meta: {
     title: '系统设置'
   },
@@ -215,6 +225,7 @@ export const allowRouters = [{
 }, {
   path: '/exception',
   component: Home,
+  icon:"\ue6b2",
   meta: {
     title: '异常页面'
   },
@@ -245,6 +256,7 @@ export const allowRouters = [{
 {
   path: '/widget',
   component: Home,
+  icon:"\ue6b2",
   meta: {
     title: '组件中心'
   },
@@ -296,6 +308,7 @@ export const allowRouters = [{
 {
   path: '/safeguard',
   component: Home,
+  icon:"\ue6b2",
   meta: {
     title: '运维管理'
   },
@@ -317,6 +330,7 @@ export const allowRouters = [{
 }, {
   path: '/plan',
   component: Home,
+  icon:"\ue6b2",
   meta: {
     title: '计划'
   },
